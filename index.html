@@ -30,49 +30,84 @@
 
     <script>
         const questions = [
-{ q: "Câu 1: Chủ nghĩa Mác-Lênin là hệ tư tưởng của giai cấp nào?", options: ["a. Nhân dân lao động","b. Tầng lớp tri thức","c. Giai cấp công nhân","d. Giai cấp nông dân"], answer: "c" },
-{ q: "Câu 2: Giai cấp công nhân thông qua con đường nào để giải phóng mình?", options: ["a. Biểu tình, bãi công","b. Đấu tranh nghị viện","c. Cách mạng xã hội chủ nghĩa","d. Đấu tranh kinh tế"], answer: "c" },
-{ q: "Câu 3: Nhiệm vụ cơ bản đầu tiên của cách mạng xã hội chủ nghĩa là gì?", options: ["a. Giai cấp công nhân giành lấy chính quyền","b. Xây dựng và hoàn thiện chính quyền nhà nước","c. Phát triển lực lượng sản xuất","d. Cả a, b, c đều đúng"], answer: "a" },
-{ q: "Câu 4: Giai cấp công nhân là người lao động gắn với nền sản xuất:", options: ["a. Nông nghiệp","b. Thủ công nghiệp","c. Đại công nghiệp","d. Công - nông nghiệp"], answer: "c" },
-{ q: "Câu 5: Học thuyết Mác-Lênin làm sáng tỏ vai trò của lực lượng nào?", options: ["a. Giai cấp tư sản","b. Giai cấp công nhân","c. Giai cấp nông dân","d. Tầng lớp tri thức"], answer: "b" },
-{ q: "Câu 6:", options: ["a. Nhận thức về chính trị - xã hội","b. Kỹ năng nghiên cứu khoa học","c. Niềm tin vào lý tưởng cách mạng","d. Cả a, b, c đều đúng"], answer: "d" },
-{ q: "Câu 7:", options: ["a. Kinh tế - xã hội","b. Khoa học tự nhiên","c. Tư tưởng lý luận","d. Cả a, b, c đều đúng"], answer: "d" },
-{ q: "Câu 8:", options: ["a. Chủ nghĩa duy vật lịch sử","b. Giá trị thặng dư","c. Sứ mệnh công nhân","d. Cả a, b, c đều đúng"], answer: "d" },
-{ q: "Câu 9:", options: ["a. Sứ mệnh công nhân","b. Thay thế CNTB","c. Con đường CNXH","d. Cả a, b, c đều đúng"], answer: "d" },
-{ q: "Câu 10:", options: ["a. Duy vật biện chứng","b. Logic + lịch sử","c. Khảo sát xã hội","d. Cả a, b, c đều đúng"], answer: "d" },
 
-{ q: "Câu 11:", options: ["a. Sứ mệnh công nhân","b. Giá trị lao động","c. Giá trị tiền công","d. Mâu thuẫn giai cấp"], answer: "d" },
-{ q: "Câu 12:", options: ["a. Lao động trực tiếp","b. Giai cấp công nhân","c. Lao động tri thức","d. Lao động kỹ thuật"], answer: "b" },
-{ q: "Câu 13:", options: ["a. Sức lao động","b. Cổ phiếu ít","c. Không phân phối","d. Không có TLSX"], answer: "d" },
-{ q: "Câu 14:", options: ["a. Làm tăng tư bản","b. Tay nghề","c. Tổ chức","d. Kỹ thuật"], answer: "a" },
-{ q: "Câu 15:", options: ["a. TLSX","b. Hầu hết TLSX","c. TLSX chủ yếu","d. Tất cả sản phẩm"], answer: "c" },
-{ q: "Câu 16:", options: ["a. Số lượng ít","b. Tổ chức thấp","c. Kỷ luật thấp","d. Lao động cơ khí"], answer: "d" },
-{ q: "Câu 17:", options: ["a. Tư bản lớn","b. Trung lưu","c. Lao động","d. Tư bản nhỏ"], answer: "a" },
-{ q: "Câu 18:", options: ["a. Tri thức","b. Công nhân","c. Công - nông","d. Các nước XHCN"], answer: "b" },
-{ q: "Câu 19:", options: ["a. Xóa chế độ cũ","b. Xóa giai cấp","c. Xóa QHSX","d. Xây dựng CNXH"], answer: "d" },
-{ q: "Câu 20:", options: ["a. Nông dân","b. Dân nghèo","c. Công nhân","d. Công - nông"], answer: "c" },
+{ q: "Câu 1: Chủ nghĩa Mác-Lênin là hệ tư tưởng của giai cấp, tầng lớp nào?", options: ["Nhân dân lao động","Tầng lớp tri thức","Giai cấp công nhân","Giai cấp nông dân"], answer: "c" },
 
-{ q: "Câu 21:", options: ["a. Lao động cao","b. Kỷ luật","c. Lợi ích thống nhất","d. Kỹ thuật"], answer: "c" },
-{ q: "Câu 22:", options: ["a. Đoàn kết","b. Kỹ thuật","c. Bị bóc lột","d. SX tiên tiến"], answer: "d" },
-{ q: "Câu 23:", options: ["a. Triệt để","b. Không tư hữu","c. Đoàn kết","d. Kỷ luật"], answer: "b" },
-{ q: "Câu 24:", options: ["a. Bình đẳng","b. Tất cả bình đẳng","c. Nhiều bình đẳng","d. Văn hoá"], answer: "a" },
-{ q: "Câu 25:", options: ["a. Tự do","b. Tự quyết","c. Độc lập","d. Quyết định"], answer: "b" },
-{ q: "Câu 26:", options: ["a. Nông dân","b. Nhân dân thế giới","c. Các dân tộc","d. Người lao động"], answer: "d" },
-{ q: "Câu 27:", options: ["a. Bế tắc","b. Hoàn toàn bất lực","c. Lo lắng","d. Phụ thuộc"], answer: "a" },
-{ q: "Câu 28:", options: ["a. Kinh tế","b. Nhận thức","c. Tâm lý","d. Văn hoá"], answer: "b" },
-{ q: "Câu 29:", options: ["a. Công - nông","b. Nhân dân","c. Tri thức","d. Lao động"], answer: "b" },
-{ q: "Câu 30:", options: ["a. Mỹ","b. Anh","c. Pháp","d. Tháng Mười Nga"], answer: "d" },
+{ q: "Câu 2: Giai cấp công nhân thông qua con đường nào để giải phóng mình và giải phóng nhân dân lao động?", options: ["Biểu tình, bãi công","Đấu tranh nghị viện","Cách mạng xã hội chủ nghĩa","Đấu tranh kinh tế"], answer: "c" },
 
-{ q: "Câu 31:", options: ["a. Dân tộc","b. Đạo đức","c. Quốc tế","d. Đa dạng"], answer: "a" },
-{ q: "Câu 32:", options: ["a. Đảng","b. Đảng & Nhà nước","c. Nhà nước","d. Hệ thống chính trị"], answer: "b" },
-{ q: "Câu 33:", options: ["a. Nguyên tắc","b. Ưu tiên","c. Phải thực hiện","d. Cần thiết"], answer: "a" },
-{ q: "Câu 34:", options: ["a. 56","b. 54","c. 50","d. 52"], answer: "b" },
-{ q: "Câu 35:", options: ["a. Tư sản - nông dân","b. Tư sản - tri thức","c. Tư sản - vô sản","d. Tư sản - lao động"], answer: "c" },
-{ q: "Câu 36:", options: ["a. Công - nông","b. Nông dân","c. Công nhân","d. Tri thức"], answer: "c" },
-{ q: "Câu 37:", options: ["a. Tri thức","b. Công - nông","c. Nông dân","d. Công nhân"], answer: "d" },
-{ q: "Câu 38:", options: ["a. Tự nguyện","b. Một vợ một chồng","c. Chỉ pháp lý","d. Bình đẳng"], answer: "c" }
-            
-        ];
+{ q: "Câu 3: Nhiệm vụ cơ bản đầu tiên của cách mạng xã hội chủ nghĩa là gì?", options: ["Giai cấp công nhân giành lấy chính quyền","Xây dựng và hoàn thiện chính quyền nhà nước","Phát triển lực lượng sản xuất","Cả a, b, c đều đúng"], answer: "a" },
+
+{ q: "Câu 4: Giai cấp công nhân là người lao động gắn với nền sản xuất:", options: ["Nông nghiệp","Thủ công nghiệp","Đại công nghiệp","Công - nông nghiệp"], answer: "c" },
+
+{ q: "Câu 5: Học thuyết Mác-Lênin đã làm sáng tỏ vai trò lịch sử toàn thế giới của lực lượng nào?", options: ["Giai cấp tư sản","Giai cấp công nhân","Giai cấp nông dân","Tầng lớp tri thức"], answer: "b" },
+
+{ q: "Câu 6: Mục đích học tập môn Chủ nghĩa xã hội khoa học nhằm giúp sinh viên:", options: ["Nhận thức về chính trị - xã hội","Kỹ năng nghiên cứu khoa học","Niềm tin vào lý tưởng cách mạng","Cả a, b, c đều đúng"], answer: "d" },
+
+{ q: "Câu 7: Chủ nghĩa xã hội khoa học ra đời trên cơ sở của tiền đề nào?", options: ["Kinh tế - xã hội","Khoa học tự nhiên","Tư tưởng lý luận","Cả a, b, c đều đúng"], answer: "d" },
+
+{ q: "Câu 8: Phát kiến vĩ đại nào của Các Mác và Ăng ghen là cơ sở hình thành chủ nghĩa xã hội khoa học?", options: ["Chủ nghĩa duy vật lịch sử","Học thuyết về giá trị thặng dư","Học thuyết về sứ mệnh lịch sử của giai cấp công nhân","Cả a, b, c đều đúng"], answer: "d" },
+
+{ q: "Câu 9: Đối tượng nghiên cứu của CNXH là gì?", options: ["Sứ mệnh lịch sử của giai cấp công nhân","Sự thay thế tất yếu chủ nghĩa tư bản bằng CNXH","Con đường cải tạo và xây dựng CNXH và chủ nghĩa cộng sản","Cả a, b, c đều đúng"], answer: "d" },
+
+{ q: "Câu 10: Chỉ ra đâu là phương pháp nghiên cứu của CNXH-KH?", options: ["Chủ nghĩa duy vật biện chứng và chủ nghĩa duy vật lịch sử","Kết hợp phương pháp logic và lịch sử","Khảo sát, so sánh và phân tích về chính trị - xã hội","Cả a, b, c đều đúng"], answer: "d" },
+
+{ q: "Câu 11: Một trong những cống hiến vĩ đại của C.Mác là xây dựng học thuyết nào?", options: ["Sứ mệnh lịch sử của giai cấp công nhân","Giá trị lao động","Giá trị tiền công","Mâu thuẫn và đấu tranh giai cấp"], answer: "d" },
+
+{ q: "Câu 12: Tập đoàn người lao động trực tiếp hay gián tiếp vận hành những công cụ sản xuất có tính chất công nghiệp ngày càng hiện đại là:", options: ["Người lao động trực tiếp","Giai cấp công nhân","Người lao động có tri thức","Người lao động có kỹ thuật"], answer: "b" },
+
+{ q: "Câu 13: Theo C.Mác, đặc điểm nào cho thấy giai cấp công nhân là giai cấp vô sản?", options: ["Sức lao động là tài sản duy nhất","Tỷ lệ cổ phiếu ít","Không có quyền trong phân phối sản phẩm","Không có tư liệu sản xuất"], answer: "d" },
+
+{ q: "Câu 14: Theo C.Mác, công nhân tức là giai cấp chỉ có thể sống với điều kiện là kiếm được việc làm và chỉ kiếm được việc làm nếu họ:", options: ["Làm tăng tư bản","Có tay nghề","Có tổ chức","Có kỹ thuật"], answer: "a" },
+
+{ q: "Câu 15: Về địa vị trong các nước đi theo con đường xã hội chủ nghĩa, về cơ bản giai cấp công nhân cùng với nhân dân lao động đã trở thành những người làm chủ về:", options: ["Tư liệu lao động","Hầu hết tư liệu sản xuất","Tư liệu sản xuất chủ yếu","Tất cả sản phẩm xã hội"], answer: "c" },
+
+{ q: "Câu 16: Xét về phương thức lao động, công nhân trong thế kỷ XIX khác gì so với công nhân hiện nay?", options: ["Số lượng ít","Tính tổ chức thấp","Tính kỷ luật thấp","Chủ yếu là lao động cơ khí"], answer: "d" },
+
+{ q: "Câu 17: Hiện nay trong các nước tư bản phát triển, tuyệt đại bộ phận tư liệu sản xuất nằm trong tay ai?", options: ["Các nhà tư bản lớn","Tầng lớp trung lưu","Các tầng lớp lao động","Tư bản vừa và nhỏ"], answer: "a" },
+
+{ q: "Câu 18: Hiện nay, lực lượng chủ yếu của tiến trình lịch sử quá độ từ chủ nghĩa tư bản lên chủ nghĩa xã hội là:", options: ["Tầng lớp tri thức","Giai cấp công nhân","Liên minh công - nông","Các nước xã hội chủ nghĩa"], answer: "c" },
+
+{ q: "Câu 19: V.I. Lênin cho rằng, điểm yếu trong học thuyết Mác là ở chỗ nó làm sáng tỏ vai trò lịch sử thế giới của giai cấp vô sản là:", options: ["Xóa bỏ chế độ cũ","Xóa bỏ giai cấp","Xóa bỏ quan hệ sản xuất cũ","Xây dựng xã hội chủ nghĩa"], answer: "d" },
+
+{ q: "Câu 20: Theo C.Mác bước một thực hiện sứ mệnh của giai cấp công nhân là họ chiếm lấy chính quyền, biến những tư liệu sản xuất thành của ai?", options: ["Giai cấp nông dân","Dân nghèo thành thị","Giai cấp công nhân","Công nhân và nông dân"], answer: "d" },
+
+{ q: "Câu 21: Nhờ có yếu tố nào mà giai cấp công nhân có khả năng đoàn kết với giai cấp khác để thực hiện sứ mệnh lịch sử của mình?", options: ["Chất lượng lao động cao","Có tính kỷ luật cao","Lợi ích cơ bản thống nhất","Trình độ khoa học, kỹ thuật cao"], answer: "c" },
+
+{ q: "Câu 22: Giai cấp công nhân là giai cấp tiên phong cách mạng vì:", options: ["Có tinh thần đoàn kết, kỷ luật cao","Có trình độ kỹ thuật cao","Bị áp bức, bóc lột nặng nề","Đại biểu cho phương thức sản xuất tiên tiến"], answer: "d" },
+
+{ q: "Câu 23: Trong xây dựng xã hội xã hội chủ nghĩa, giai cấp công nhân có đặc điểm thế nào mà họ kiên định, kiên quyết đấu tranh chống chế độ áp bức bóc lột, xóa bỏ chế độ tư hữu?", options: ["Tính triệt để cách mạng","Không gắn với tư hữu","Tinh thần đoàn kết","Tính tổ chức, kỷ luật"], answer: "a" },
+
+{ q: "Câu 24:", options: ["Hoàn toàn bình đẳng","Tất cả bình đẳng","Có nhiều bình đẳng","Bình đẳng về văn hoá"], answer: "a" },
+
+{ q: "Câu 25:", options: ["Tự do","Tự quyết","Độc lập","Quyết định"], answer: "b" },
+
+{ q: "Câu 26:", options: ["Nông dân các nước","Nhân dân thế giới","Tất cả các dân tộc","Người lao động của các nước"], answer: "c" },
+
+{ q: "Câu 27:", options: ["Bế tắc, bất lực","Hoàn toàn bất lực","Lo lắng, sợ hãi","Hoàn toàn phụ thuộc"], answer: "a" },
+
+{ q: "Câu 28:", options: ["Kinh tế","Nhận thức","Tâm lý","Văn hoá"], answer: "b" },
+
+{ q: "Câu 29:", options: ["Công nhân và nông dân","Nhân dân","Tri thức","Những người lao động"], answer: "b" },
+
+{ q: "Câu 30:", options: ["Tư sản Mỹ","Tư sản Anh","Tư sản Pháp","Tháng Mười Nga"], answer: "d" },
+
+{ q: "Câu 31:", options: ["Dân tộc","Đạo đức","Quốc tế","Đa dạng, phong phú"], answer: "a" },
+
+{ q: "Câu 32:", options: ["Đảng Cộng Sản","Đảng và Nhà nước","Nhà nước","Hệ thống chính trị"], answer: "b" },
+
+{ q: "Câu 33:", options: ["Nguyên tắc","Ưu tiên","Phải thực hiện","Cần thiết"], answer: "a" },
+
+{ q: "Câu 34:", options: ["56 dân tộc","54 dân tộc","50 dân tộc","52 dân tộc"], answer: "b" },
+
+{ q: "Câu 35:", options: ["Giai cấp tư sản và giai cấp nông dân","Giai cấp tư sản và tầng lớp tri thức","Giai cấp tư sản và giai cấp vô sản","Giai cấp tư sản và người lao động"], answer: "c" },
+
+{ q: "Câu 36:", options: ["Giai cấp công nhân và nông dân","Giai cấp nông dân","Giai cấp công nhân","Tầng lớp tri thức"], answer: "c" },
+
+{ q: "Câu 37:", options: ["Tầng lớp tri thức","Giai cấp công nhân và nông dân","Giai cấp nông dân","Giai cấp công nhân"], answer: "d" },
+
+{ q: "Câu 38:", options: ["Hôn nhân tự nguyện","Hôn nhân một vợ một chồng","Hôn nhân chỉ cần đảm bảo về mặt pháp lý","Vợ chồng bình đẳng"], answer: "c" }
+
+];
 
         let html = '';
         questions.forEach((item, index) => {
